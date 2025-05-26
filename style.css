@@ -1,0 +1,10 @@
+
+.navbar {
+    background-color: #dc3545; /* Красный */
+}
+.nav-link {
+    color: black; /* Белый текст */
+}
+.nav-link:hover {
+    color: #28a745; /* Зелёный при наведении */
+}
