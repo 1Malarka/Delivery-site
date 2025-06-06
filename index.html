@@ -26,10 +26,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#capability">Capabilities</a>
+                    <a class="nav-link" href="#vacancy">Vacancies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About us</a>
+                    <a class="nav-link" href="#capability">Capabilities</a>
                 </li>
                 <li class="nav-item">   
                     <a class="nav-link" href="#contact">Contacts</a>
@@ -82,12 +82,12 @@
     <section id="capability">
     <div class="container">
 
-        <div class="row align-items-center mb-4">
+        <div id="firstcard" class="row align-items-center">
             <div class="col-md-6" id="firsttext">
                 <h3>Everything you want, delivered.</h3>
                 <p>From fresh food to gourmet dishes, Zip brings it all to your door in minutes. 
                    Enjoy reliable service anytime you need it. Try us today!</p>
-                <a class="btn" id="firstbtn">Find restaurants</a>
+                <a href="#Login" class="btn" id="firstbtn">Find restaurants</a>
             </div>
             <div class="col-md-6">
                 <img src="Meal.jpg" id="firstpic" alt="Meal top view photo" class="img-fluid">
@@ -96,19 +96,62 @@
 
         <div class="row align-items-center mb-4">
             <div class="col-md-6">
-                <img src="..." alt="Snacks photo" class="img-fluid">
+                <img src="Snack.jpg" alt="Snacks photo" class="img-fluid">
             </div>
-            <div class="col-md-6" id="secondtext" order-md-2>
+            <div class="col-md-6" id="secondtext">
                 <h3>Stock up on snacks, household essentials, and more!</h3>
                 <p>Get your favorite snacks and household items delivered fast. 
                    Never run out of what you need with Zip’s convenient service!</p>
+                <a href="#Login" class="btn" id="firstbtn">Search shops</a>
             </div>
         </div>
     </div>
 </section>  
 
-    <!-- About us -->
-    <section id="about"></section>
+    <!-- Helping -->
+    <section id="helping">
+        <h1 id="helpingtitle" class="text-center mt-5 pt-5">
+            Zip helping you with everything you need
+        </h1>
+        <div class="container flex-flow-wrap text-center" id="helpingcontainer">
+            <div class="row justify-content-around mt-5 pt-4">
+                <div class="col-md-6 col-lg-5 align-items-center">
+                    <img src="Fastfoodphoto.jpg" id="firstphoto" alt="Grocery shop photo">
+                      <h4>Fast Food Delivery</h4>
+                      <p>Craving pizza or sushi? 
+                        Zip delivers your favorite meals from top restaurants in under 30 minutes. 
+                        Order and satisfy your hunger fast!</p>
+                      <a href="#Login" class="btn" id="firstbtncard">Find Restaurants</a>
+                </div>
+                <div class="col-md-6 col-lg-5 ">
+                    <img src="Grocery.jpg" id="secondphoto" alt="Grocery shop photo">
+                      <h4>Grocery Shopping</h4>
+                      <p>Need fresh veggies or snacks? 
+                        Zip brings groceries from your favorite stores straight to your door. 
+                        Save time and enjoy hassle-free shopping!</p>
+                      <a href="#Login" class="btn" id="secondbtncard">Search Grocery</a>
+                </div>
+            </div>
+            <div class="row justify-content-around mt-5 pt-4">
+                <div class="col-md-6 col-lg-5 align-items-center">
+                    <img id="thirdphoto" src="Petphoto.jpg" alt="Grocery shop photo">
+                      <h4>Pet Supplies</h4>
+                      <p>Running low on pet food or toys? 
+                        Zip delivers everything your furry friend needs, right when you need it. 
+                        Keep your pets happy with ease!</p>
+                      <a href="#Login" class="btn" id="thirdbtncard">Shop Pet Toys</a>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <img id="fourthphoto" src="Medicines.jpg" alt="Grocery shop photo">
+                      <h4>Medicines</h4>
+                      <p>Missed your meds? Zip delivers prescriptions and over-the-counter meds fast. 
+                        Stay well with our quick service!</p>
+                      <a href="#Login" class="btn " id="fourthbtncard">Find Pharmacy</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contacts -->
     <section id="contact"></section>
