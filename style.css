@@ -95,15 +95,15 @@
         color: white;
     }
 
-    .text-warning:hover{
-        transition: 0.4s;
-        color: rgba(255, 255, 0, 0.527)
-    }
-
     #vacancy a{
         text-decoration: none;
         font-weight: 700;
         font-size: 1.1rem;
+        transition: 0.5s;
+    }
+
+    #vacancy a:hover{
+        text-decoration: underline;
     }
 
     #vacancy h3{
@@ -111,6 +111,7 @@
         letter-spacing: 1px;
         line-height: 45px;
         font-size: 2rem;
+        color: #000000;
     }
 
     #vacancy p{
@@ -127,15 +128,20 @@
         margin-left: 10rem;
     }
 
+    #firstcard{
+        margin-bottom: 70px;
+    }
+
     #firsttext{
         max-width: 400px;
-        margin-left: 110px;
+        margin-left: 130px;
     }
 
     #firsttext h3{
         font-weight: 700;
         font-size: 42px;
         letter-spacing: 1.8px;
+        color: #000000;
     }
 
     #firsttext p{
@@ -161,5 +167,95 @@
         max-width: 700px;
         max-height: 600px;
         margin-left: 50px;
+    }
+
+    #secondtext{
+        max-width: 500px;
+        margin-left: 100px;
+    }
+
+    #secondtext h3{
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: 1.8px;
+        color: #000000;
+    }
+
+    #secondtext p{
+        font-weight: 400;
+        font-size: 17px;
+    }
+
+    #secondpic{
+        max-width: 600px;
+        max-height: 370px;
+        margin-left: 50px;
+    }
+
+    #helpingtitle{
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #000000;
+    }
+
+    #firstphoto {
+        width: 550px;
+        height: 550px;
+    }
+
+    #secondphoto {
+        width: 550px;
+        height: 550px;
+    }
+
+    #helpingcontainer{
+        padding-left: 3px;
+    }
+
+    #helping h4{
+        color: #000000;
+        font-weight: 700;
+        text-align: center;
+        font-size: 48px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    #helping p{
+        color: #000000;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #thirdphoto {
+        width: 550px;
+        height: 550px;
+    }
+
+    #fourthphoto {
+        width: 550px;
+        height: 550px;
+    }
+
+    #firstbtncard {
+       color: white;
+       background-color: #000000;
+    }
+
+    #secondbtncard {
+       color: white;
+       background-color: #000000;
+       text-align: center;
+    }
+
+    #thirdbtncard {
+       color: white;
+       background-color: #000000;
+    }
+
+    #fourthbtncard {
+       color: white;
+       background-color: #000000;
     }
 
