@@ -33,10 +33,6 @@
         color: #0000009c;
     }
 
-    header #navbar-container {
-        margin-right: 19vh;
-    }
-
     #loginbtn:hover {
        color: white;
        background-color: #000000;
@@ -71,8 +67,9 @@
     #hero h1 {
         font-size: 50px;
         color: #ffffff;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
         margin-bottom: 20px;
+        font-weight: 700;
     }
 
     #hero p {
@@ -238,24 +235,99 @@
         height: 550px;
     }
 
-    #firstbtncard {
-       color: white;
-       background-color: #000000;
+    #helping a{
+        color: white;
+        background-color: #000000;
     }
 
-    #secondbtncard {
-       color: white;
-       background-color: #000000;
-       text-align: center;
+    #helping a:hover{
+        color: rgba(255, 255, 255, 0.777);
     }
 
-    #thirdbtncard {
-       color: white;
-       background-color: #000000;
+    footer {
+        background-color: #000000;
+        color: #ffffff;
     }
 
-    #fourthbtncard {
-       color: white;
-       background-color: #000000;
+    footer a{
+        margin-top: 4px;
+        margin-left: 150px;
+        display: flex;
+        text-decoration: none;
+        color: rgb(196, 196, 196);
+        font-size: 14px;
+        font-weight: 500;
     }
 
+    footer a:hover{
+        text-decoration: underline;
+    }
+
+    #secondfooter a{
+        margin-top: 4px;
+        margin-left: 0px;
+        margin-right: 10px;
+        display: flex;
+        text-decoration: none;
+        color: rgb(196, 196, 196);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    footer svg{
+        margin-right: 10px;
+    }
+
+    footer h4{
+        color: rgb(196, 196, 196);
+        font-size: 21px;
+        font-weight: 400;
+        margin-right: 10px;
+        margin-bottom: 22px;
+    }
+
+
+    @media (max-width: 430px) {
+    /* General */
+    body { font-size: 14px; }
+    h1 { font-size: 30px !important; }
+    h3 { font-size: 28px !important; }
+    p { font-size: 14px !important; }
+
+
+    /* #hero */
+    #hero { height: 50vh; }
+    #hero h1 { font-size: 30px; }
+    #hero p { font-size: 16px; }
+    #hero .input-group { width: 250px !important; }
+    #hero a { font-size: 14px; }
+
+    /* #vacancy */
+    #vacancy {margin-top: 64px !important; margin-bottom: 64px !important;}
+    #vacancy .row { flex-direction: column; }
+    #vacancy img {width: 256px; height: 256px;}
+    #vacancy #firstc, #vacancy #secondc { width: 100%; margin-left: 0 !important; }
+
+    /* #capability */
+    #capability .row {justify-content: center;}
+    #firstcard {flex-direction: column-reverse;}
+    #capability h3 {text-align: center; padding-top: 10px; }
+    #capability a {align-items: center !important; display: inline-block !important; }
+    #firstpic, #secondpic { max-width: 100% !important; max-height: 100% !important; margin-left: 0 !important; margin-top: 20px; }
+    #firsttext, #secondtext { max-width: 100% !important; margin-left: 0 !important; text-align: center; }
+
+    /* #helping */
+    #helping .row { flex-direction: column; margin-top: 0px !important; text-align: center !important;}
+    #helping .col-md-6 {width: 100%; padding-right: 4px;}
+    #secondhelp {padding-top: 0px !important;}
+    #firstphoto, #secondphoto, #thirdphoto, #fourthphoto { width: 300px !important; height: 300px !important; margin-top: 20px; }
+
+    /* #footer */
+    #footer {padding-bottom: 15px;}
+    footer .col { width: 100%; margin-bottom: 20px; }
+    footer a { margin-left: 0 !important; font-size: 13px; }
+    #secondfooter { flex-direction: column; align-items: center; }
+    #socialimg {margin-top: 4px;}
+}
+
+/* Made by Malarka */
