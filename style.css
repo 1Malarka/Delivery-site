@@ -330,4 +330,8 @@
     #socialimg {margin-top: 4px;}
 }
 
+@media (max-width: 390px) {
+    footer a { margin-left: 0 !important; font-size: 12px; text-align: center;}
+}
+
 /* Made by Malarka */
