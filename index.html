@@ -16,7 +16,7 @@
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
     <!-- Header -->
     <header>
@@ -35,27 +35,78 @@
                     <a class="nav-link" href="#capability">Capabilities</a>
                 </li>
                 <li class="nav-item">   
-                    <a class="nav-link" href="#contact">Contacts</a>
+                    <a class="nav-link" href="#footer">Contacts</a>
                 </li>
                 <li class="nav-item">   
-                    <a class="nav-link" href="#Login" id="loginbtn">Log in</a>
+                    <a class="nav-link" href="#" id="loginbtn" data-target="login">Log in</a>
                 </li>
                 <li class="nav-item">   
-                    <a class="nav-link" href="#Signup" id="signupbtn">Sign up</a>
+                    <a class="nav-link" href="#" id="signupbtn" data-target="signup">Sign up</a>
                 </li>
+
             </ul>
         </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main section  -->
+    <!-- Log in sign up forms -->
+    <div id="overlay" class=""></div>
+    <section id="auth" class="text-center mt-5 justify-content-center align-items-center">
+    <div class="auth-container">
+        <form id="login-form" class="">
+        <div class="exitbtndiv">
+            <button class="btn exitbtn rounded-circle align-items-center d-flex">
+            <?xml version="1.0" ?><svg class="feather feather-x" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+            </button>
+            <h3 class="text-start mb-4 fw-semibold">Log In</h3>
+        </div>
+            <div class="d-flex align-items-center text-center mt-5" style="flex-direction: column;">
+                <button class="continuea mb-2 mt-5" style="background-color: rgb(66, 133, 246);">Continue with Google</button>
+                <button class="continuea mb-2 " style="background-color: rgb(59, 89, 152);">Continue with Facebook</button>
+                <button class="continuea mb-2 bg-black">Continue with Apple</button>
+            </div>
+            <div class="d-flex justify-content-center align-items-center conem mb-4">
+            <span class="mt-3 mb-3" id="emailt">or continue with email</span>
+            </div> 
+            <div class="">
+            <h4 class="text-start">Email</h4>
+            <input type="email" id="login-email" class="form-control mb-3 logsignforms" placeholder="Email" required>
+            <input type="password" id="login-password" class="form-control mb-3 logsignforms" placeholder="Password" required>
+            <button type="submit" class="btn mt-2 authbutton ">Continue to Log In</button>
+            </div>
+        </form>
+        <form id="signup-form" style="display: none;">
+        <div class="exitbtndiv">
+            <button class="btn exitbtn rounded-circle align-items-center d-flex">
+            <?xml version="1.0" ?><svg class="feather feather-x" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+            </button>
+            <h3 class="text-start mb-4 fw-semibold">Sign up</h3>
+        </div>
+            <h4 class="text-start" style="top: 100px; position: relative;">Email</h4>
+            <input type="email" id="signup-email" class="form-control mb-2 logsignforms2" placeholder="Email" required>
+            <input type="password" id="signup-password" class="form-control mb-2 logsignforms" placeholder="Password" required>
+            <button type="submit" class="btn authbutton">Continue to Sign Up</button>
+            <div class="d-flex justify-content-center align-items-center conem ">
+            <span class="mt-3 mb-3" id="emailt">or</span>
+            </div>
+            <div class="d-flex align-items-center text-center" style="flex-direction: column;">
+                <button class="continuea mb-2 " style="background-color: rgb(66, 133, 246);">Continue with Google</button>
+                <button class="continuea mb-2 " style="background-color: rgb(59, 89, 152);">Continue with Facebook</button>
+                <button class="continuea mb-2 bg-black">Continue with Apple</button>
+            </div>
+        </form>
+        <button id="toggle-auth" class="btn mt-3 authbutton ">Switch to Sign Up</button>
+    </div>
+</section>
+
+    <!-- Hero  -->
     <section id="hero">
         <div class="container text-center">
             <h1 class="text-white">FIRST DELIVERY IS FREE</h1>
-            <div class="input-group w-25 mx-auto">
+            <div id="inputline" class="input-group w-25 mx-auto">
                 <input type="text" class="form-control" placeholder="Enter your address">
-                <a class="btn" type="button">Search</a>
+                <a id="searchbtn" class="btn" type="button">Search</a>
             </div>
         </div>
     </section>
@@ -69,13 +120,13 @@
                     <img src="Delivery.png" alt="Driver Image" class="img-fluid mb-4">
                     <h3>Become a driver</h3>
                     <p>Join Zip as a driver and deliver to customers with flexible hours! Earn great pay today.</p>
-                    <a href="#delivery" class="text-danger">Start delivering ➜</a>
+                    <a href="#" class="text-danger">Start delivering ➜</a>
                 </div>
                 <div id="secondc" class="narrow-card">
                     <img src="shop.png" alt="Driver Image" class="img-fluid mb-4">
                     <h3>Become a merchant</h3>
                     <p>Partner with Zip to reach more customers with your business! Start growing now.</p>
-                    <a href="#Signup" class="text-danger">Sign up for a Zip ➜</a>
+                    <a href="#" class="text-danger" data-target="signup">Sign up for a Zip ➜</a>
                 </div>
             </div>
         </div>
@@ -90,7 +141,7 @@
                 <h3>Everything you want, delivered.</h3>
                 <p>From fresh food to gourmet dishes, Zip brings it all to your door in minutes. 
                    Enjoy reliable service anytime you need it. Try us today!</p>
-                <a href="#Login" class="btn" id="firstbtn">Find restaurants</a>
+                <a href="#Login" class="btn" id="firstbtn" data-target="signup">Find restaurants</a>
             </div>
             <div class="col-md-6">
                 <img src="Meal.jpg" id="firstpic" alt="Meal top view photo" class="img-fluid">
@@ -105,7 +156,7 @@
                 <h3>Stock up on snacks, household essentials, and more!</h3>
                 <p>Get your favorite snacks and household items delivered fast. 
                    Never run out of what you need with Zip’s convenient service!</p>
-                <a href="#Login" class="btn" id="firstbtn">Search shops</a>
+                <a href="#Login" class="btn" id="firstbtn" data-target="signup">Search shops</a>
             </div>
         </div>
     </div>
@@ -124,7 +175,7 @@
                       <p>Craving pizza or sushi? 
                         Zip delivers your favorite meals from top restaurants in under 30 minutes. 
                         Order and satisfy your hunger fast!</p>
-                      <a href="#Login" class="btn" id="firstbtncard">Find Restaurants</a>
+                      <a href="#Login" class="btn" id="firstbtncard" data-target="signup">Find Restaurants</a>
                 </div>
                 <div class="col-md-6 col-lg-5 ">
                     <img src="Grocery.jpg" id="secondphoto" alt="Grocery shop photo">
@@ -132,7 +183,7 @@
                       <p>Need fresh veggies or snacks? 
                         Zip brings groceries from your favorite stores straight to your door. 
                         Save time and enjoy hassle-free shopping!</p>
-                      <a href="#Login" class="btn" id="secondbtncard">Search Grocery</a>
+                      <a href="#Login" class="btn" id="secondbtncard" data-target="signup">Search Grocery</a>
                 </div>
             </div>
             <div class="row justify-content-around mt-5 pt-4" id="secondhelp">
@@ -142,14 +193,14 @@
                       <p>Running low on pet food or toys? 
                         Zip delivers everything your furry friend needs, right when you need it. 
                         Keep your pets happy with ease!</p>
-                      <a href="#Login" class="btn" id="thirdbtncard">Shop Pet Toys</a>
+                      <a href="#Login" class="btn" id="thirdbtncard" data-target="signup">Shop Pet Toys</a>
                 </div>
                 <div class="col-md-6 col-lg-5 mb-4">
                     <img id="fourthphoto" src="Medicines.jpg" alt="Grocery shop photo">
                       <h4>Medicines</h4>
                       <p>Missed your meds? Zip delivers prescriptions and over-the-counter meds fast. 
                         Stay well with our quick service!</p>
-                      <a href="#Login" class="btn " id="fourthbtncard">Find Pharmacy</a>
+                      <a href="#Login" class="btn " id="fourthbtncard" data-target="signup">Find Pharmacy</a>
                 </div>
             </div>
             </div>
@@ -161,7 +212,7 @@
         <div class="container text-center">
             <div class="row align-items-start pt-4">
                 <h4>Popular links</h4>
-                <div class="col w-25">
+                <div class="col w-25 ">
                      <a href="#" class="">Fast Food Delivery</a>
                      <a href="#" class="">Grocery Essentials</a>
                      <a href="#" class="">Pet Care</a>
